@@ -1,8 +1,23 @@
 {
   "name": "react-barcode-qrcode",
-  "private": true,
+  "private": false,
   "version": "0.0.1",
+  "description": "A react library for generating qrcode and barcode.",
+  "author": "cperdiansyah <chandraperdiansyah@gmail.com>",
+  "license": "MIT",
   "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "reactjs",
+    "barcode",
+    "qrcode",
+    "react-barcode",
+    "react-qrcode",
+    "react-barcode-qrcode",
+    "react-qrcode-barcode"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,6 +25,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "jsbarcode": "^3.11.5",
+    "qrcode.react": "^3.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
