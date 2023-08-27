@@ -49,7 +49,6 @@ const BarcodeSVG: React.FC<BarcodeProps> = (props) => {
         height: props.height,
         displayValue: props.displayValue,
         xmlDocument: document,
-        // renderer: 'svg', // Specify SVG rendering
       });
     }
   }, [

@@ -31,6 +31,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@types/node": "^20.5.6",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
@@ -41,6 +42,28 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
-  }
+    "vite": "^4.4.5",
+    "vite-plugin-dts": "^3.5.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "bundlesize": [
+    {
+      "path": "./dist/*.js",
+      "maxSize": "21 kB"
+    },
+    {
+      "path": "./dist/**/*.js",
+      "maxSize": "21 kB"
+    },
+    {
+      "path": "./dist/*.ts",
+      "maxSize": "750 B"
+    },
+    {
+      "path": "./dist/**/*.ts",
+      "maxSize": "770 B"
+    }
+  ]
 }
